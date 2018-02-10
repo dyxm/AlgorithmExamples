@@ -1,5 +1,5 @@
 //
-// çŸ©é˜µè¿ä¹˜é—®é¢˜ï¼ˆæœ€ä½³è¿ä¹˜é¡ºåºï¼‰
+// ¾ØÕóÁ¬³ËÎÊÌâ£¨×î¼ÑÁ¬³ËË³Ğò£©
 // Created by dyxm on 2018/2/4.
 //
 
@@ -9,11 +9,11 @@
 #endif //ALGORITHMEXAMPLES_MATRIXCHAIN_H
 
 /**
- * å¸¸è§„åŠ¨æ€è§„åˆ’è§£æ³•
- * @param p çŸ©é˜µé•¿åº¦è®°å½•
- * @param n çŸ©é˜µä¸ªæ•°
- * @param m æ€»æ¬¡æ•°è®°å½•çŸ©é˜µ
- * @param s åˆ†å‰²ç‚¹è®°å½•çŸ©é˜µ
+ * ³£¹æ¶¯Ì¬¹æ»®½â·¨
+ * @param p ¾ØÕó³¤¶È¼ÇÂ¼
+ * @param n ¾ØÕó¸öÊı
+ * @param m ×Ü´ÎÊı¼ÇÂ¼¾ØÕó
+ * @param s ·Ö¸îµã¼ÇÂ¼¾ØÕó
  * @return
  */
 void MatrixChain(int *p, int n, int **m, int **s) {
@@ -36,12 +36,12 @@ void MatrixChain(int *p, int n, int **m, int **s) {
 
 
 /**
- * â€œå¤‡å¿˜å½•â€åŠ¨æ€è§„åˆ’è§£æ³•çš„é€’å½’ç®—å­
+ * ¡°±¸ÍüÂ¼¡±¶¯Ì¬¹æ»®½â·¨µÄµİ¹éËã×Ó
  * @param i
  * @param j
- * @param p çŸ©é˜µé•¿åº¦è®°å½•
- * @param m æ€»æ¬¡æ•°è®°å½•çŸ©é˜µ
- * @param s åˆ†å‰²ç‚¹è®°å½•çŸ©é˜µ
+ * @param p ¾ØÕó³¤¶È¼ÇÂ¼
+ * @param m ×Ü´ÎÊı¼ÇÂ¼¾ØÕó
+ * @param s ·Ö¸îµã¼ÇÂ¼¾ØÕó
  * @return
  */
 int LookupChain(int i, int j, int *p, int **m, int **s) {
@@ -64,11 +64,11 @@ int LookupChain(int i, int j, int *p, int **m, int **s) {
 
 
 /**
- * â€œå¤‡å¿˜å½•â€åŠ¨æ€è§„åˆ’è§£æ³•
- * @param p çŸ©é˜µé•¿åº¦è®°å½•
- * @param n çŸ©é˜µä¸ªæ•°
- * @param m æ€»æ¬¡æ•°è®°å½•çŸ©é˜µ
- * @param s åˆ†å‰²ç‚¹è®°å½•çŸ©é˜µ
+ * ¡°±¸ÍüÂ¼¡±¶¯Ì¬¹æ»®½â·¨
+ * @param p ¾ØÕó³¤¶È¼ÇÂ¼
+ * @param n ¾ØÕó¸öÊı
+ * @param m ×Ü´ÎÊı¼ÇÂ¼¾ØÕó
+ * @param s ·Ö¸îµã¼ÇÂ¼¾ØÕó
  * @return
  */
 int MemorizedMatrixChain(int *p, int n, int **m, int **s) {
@@ -77,10 +77,10 @@ int MemorizedMatrixChain(int *p, int n, int **m, int **s) {
 
 
 /**
- * æ‰“å°å‡ºæœ€ä¼˜è§£ç»“æ„
+ * ´òÓ¡³ö×îÓÅ½â½á¹¹
  * @param i
  * @param j
- * @param s åˆ†å‰²ç‚¹è®°å½•çŸ©é˜µ
+ * @param s ·Ö¸îµã¼ÇÂ¼¾ØÕó
  * @return
  */
 void Traceback(int i, int j, int **s) {

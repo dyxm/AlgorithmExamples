@@ -1,5 +1,5 @@
 //
-// æœ€é•¿å…¬å…±å­åºåˆ—
+// ×î³¤¹«¹²×ÓĞòÁĞ
 // Created by Administrator on 2018/2/4.
 //
 
@@ -11,13 +11,13 @@
 #endif //ALGORITHMEXAMPLES_LCS_H
 
 /**
- * æ±‚è§£æœ€é•¿å…¬å…±å­åºåˆ—
- * @param m å­—ç¬¦ä¸²xçš„é•¿åº¦
- * @param n å­—ç¬¦ä¸²yçš„é•¿åº¦
- * @param x å­—ç¬¦ä¸²x
- * @param y å­—ç¬¦ä¸²y
- * @param c é•¿åº¦è®°å½•çŸ©é˜µ
- * @param b å­é—®é¢˜ç±»åˆ«è®°å½•çŸ©é˜µ
+ * Çó½â×î³¤¹«¹²×ÓĞòÁĞ
+ * @param m ×Ö·û´®xµÄ³¤¶È
+ * @param n ×Ö·û´®yµÄ³¤¶È
+ * @param x ×Ö·û´®x
+ * @param y ×Ö·û´®y
+ * @param c ³¤¶È¼ÇÂ¼¾ØÕó
+ * @param b ×ÓÎÊÌâÀà±ğ¼ÇÂ¼¾ØÕó
  */
 void LSCLength(int m, int n, char *x, char *y, int **c, int **b) {
     int i, j;
@@ -41,11 +41,11 @@ void LSCLength(int m, int n, char *x, char *y, int **c, int **b) {
 }
 
 /**
- * æ‰“å°æœ€é•¿å­åºåˆ—
+ * ´òÓ¡×î³¤×ÓĞòÁĞ
  * @param i
  * @param j
  * @param x
- * @param b å­é—®é¢˜ç±»åˆ«è®°å½•çŸ©é˜µ
+ * @param b ×ÓÎÊÌâÀà±ğ¼ÇÂ¼¾ØÕó
  */
 void PrintLCS(int i, int j, char *x, int **b) {
     if (i == 0 || j == 0)

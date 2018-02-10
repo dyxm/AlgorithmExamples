@@ -1,16 +1,21 @@
+//
+// ³£ÓÃËã·¨Ñ§Ï°±Ê¼Ç
+// Created by dyxm on 2018/2/4.
+//
 #include <iostream>
 #include "dynamicProgramming/MatrixChain.h"
 #include "dynamicProgramming/LCS.h"
+#include "dynamicProgramming/MaxSubSum.h"
 
 
 int main() {
     /**
-     * çŸ©é˜µè¿ä¹˜æµ‹è¯•
+     * ¾ØÕóÁ¬³Ë£¨×îÉÙ³Ë»ı´ÎÊıµÄĞòÁĞ£©
      */
 //    int p[7] = {30, 35, 15, 5, 10, 20, 25};
-//    int **m = (int **)malloc(sizeof(int *) * 7); // åˆ†é…æ‰€æœ‰è¡Œçš„é¦–åœ°å€
+//    int **m = (int **)malloc(sizeof(int *) * 7); // ·ÖÅäËùÓĞĞĞµÄÊ×µØÖ·
 //    int **s = (int **)malloc(sizeof(int *) * 7);
-//    for (int i = 0; i < 7; i ++) { // æŒ‰è¡Œåˆ†é…æ¯ä¸€åˆ—
+//    for (int i = 0; i < 7; i ++) { // °´ĞĞ·ÖÅäÃ¿Ò»ÁĞ
 //        m[i] = (int *)malloc(sizeof(int) * 7);
 //        s[i] = (int *)malloc(sizeof(int) * 7);
 //    }
@@ -24,18 +29,31 @@ int main() {
 //    Traceback(1, 6, s);
 
     /**
-     * æœ€é•¿å…¬å…±å­åºåˆ—
+     * ×î³¤¹«¹²×ÓĞòÁĞ
      */
-    int m = 7, n = 6;
-    char x[m] = {'A', 'B', 'C', 'B', 'D', 'A', 'B'};
-    char y[n] = {'B', 'D', 'C', 'A', 'B', 'A'};
-    int **c = (int **)malloc(sizeof(int *) * (m + 1));
-    int **b = (int **)malloc(sizeof(int *) * (m + 1));
-    for (int i = 0; i < (m + 1); i ++) {
-        c[i] = (int *)malloc(sizeof(int) * (n + 1));
-        b[i] = (int *)malloc(sizeof(int) * (n + 1));
+//    int m = 7, n = 6;
+//    char x[m] = {'A', 'B', 'C', 'B', 'D', 'A', 'B'};
+//    char y[n] = {'B', 'D', 'C', 'A', 'B', 'A'};
+//    int **c = (int **)malloc(sizeof(int *) * (m + 1));
+//    int **b = (int **)malloc(sizeof(int *) * (m + 1));
+//    for (int i = 0; i < (m + 1); i ++) {
+//        c[i] = (int *)malloc(sizeof(int) * (n + 1));
+//        b[i] = (int *)malloc(sizeof(int) * (n + 1));
+//    }
+//    LSCLength(m, n, x, y, c, b);
+//    PrintLCS(m, n, x, b);
+
+    /**
+     * ×î´ó×Ó¶ÎºÍ
+     */
+    int n = 6;
+    int start = 0, end = 0;
+    int x[6] = {-2, 11, -4, 13, -5, -2};
+    int sum = MaxSubSum(n, x, &start, &end);
+    std::cout << "×î´ó¶ÎÎª£º";
+    for (int i = start; i <= end; ++i) {
+        std::cout << x[i] << ",";
     }
-    LSCLength(m, n, x, y, c, b);
-    PrintLCS(m, n, x, b);
+    std::cout << "\nºÍÎª£º" << sum;
     return 0;
 }
